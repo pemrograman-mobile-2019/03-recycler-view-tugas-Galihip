@@ -5,23 +5,14 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
 android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="109dp"
-        android:layout_height="93dp"
-        android:src="@drawable/spongbob" />
 
-    <TextView
-        android:id="@+id/Spongebob"
-        android:layout_width="274dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="24dp"
-        android:text="Spongebob"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:listitem="@layout/recycler_view_item">
 
-
+    </android.support.v7.widget.RecyclerView>
 </android.support.constraint.ConstraintLayout>
